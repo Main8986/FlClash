@@ -49,6 +49,9 @@ jobs:
           add-to-path: true
           link-to-sdk: true
 
+      - name: Get Flutter dependencies
+        run: flutter pub get
+
       - name: Fetch CA certificates
         shell: bash
         env:
